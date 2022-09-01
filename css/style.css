@@ -1,10 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
     position: relative;
-
-   min-height: 100vh;
+color: #fff;
+background: #0D0D2B;
+font-family: 'Rubik', sans-serif;
+   
 }
 
 * {
@@ -18,4 +20,88 @@ body {
 ::before,
 ::after {
     box-sizing: border-box;
+}
+.row{
+    padding:0 120px ;
+}
+.container{
+  position: relative;
+}
+
+main{
+    position: relative;
+    top: 60px;
+    min-height: 100vh;
+}
+/* header */
+header{
+        display: flex;
+        justify-content: space-between;
+}
+header ul{
+    text-decoration: none;
+   position: relative;
+   list-style: none;
+   
+}
+ul li{
+    display: inline-block;
+    padding:0 16px;
+
+    
+}
+header span{
+    margin-left: 20px;
+    
+}
+header ul span  a{
+    
+font-weight: 500;
+line-height: 24px;
+
+}
+li a:hover{
+   
+    border-bottom:1px solid #3671E9;
+}
+span a:hover{
+    border-bottom:transparent;
+}
+span li {
+    padding: 0 24px;
+}
+header ul a{
+    padding-bottom: 7px;
+    /* background-color: darkblue; */
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+transition: all 0.6s ease;
+   
+}
+header .login{
+    border-right: 1px solid white;
+}
+header .register{
+    background-color: #3671E9;
+    padding: 14px 32px;
+    border-radius: 32px;
+}
+
+
+
+header .logo{
+    display: flex;
+    gap: 16px;
+}
+.logo h5{
+    font-family: 'Inter', sans-serif;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.04em;
 }
