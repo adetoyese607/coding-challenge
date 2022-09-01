@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 body {
     margin: 0;
     position: relative;
@@ -31,12 +33,13 @@ font-family: 'Rubik', sans-serif;
 main{
     position: relative;
     top: 60px;
-    min-height: 100vh;
+    min-height: 150vh;
 }
 /* header */
 header{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 50px;
 }
 header ul{
     text-decoration: none;
@@ -104,4 +107,101 @@ header .logo{
 font-size: 18px;
 line-height: 22px;
 letter-spacing: 0.04em;
+}
+
+/* Hero section */
+.hero-section{
+    display: flex;
+gap: 8px;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid wheat; */
+    padding-bottom: 100px;
+}
+
+.hero-section img.shadow1{
+    position: absolute;
+left: -50px;
+top: 300px;
+}
+.hero-section img.shadow2{
+    position: absolute;
+left: 490px;
+bottom: 0;
+}
+.hero-section .hero-text{
+   text-align: left;
+    display: flex;
+    place-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 24px;
+}
+
+
+.hero-text .text{
+    background: rgba(255, 255, 255, 0.1);
+border-radius: 32px;
+padding: 6px 11px;
+padding-left: 5px;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+}
+.hero-text .text span{    
+    letter-spacing: 0.04em;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+padding: 4px 16px;
+color: #0D0D2B;
+margin-right: 16px;
+background: #FFFFFF;
+border-radius: 32px;
+}
+.hero-text h4{
+    font-weight: 700;
+font-size: 55px;
+line-height: 76px;
+}
+.hero-text p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+letter-spacing: 0.01em;
+
+/* Neutral / Grey 5 */
+
+color: #E0E0E0;
+}
+.hero-text .try-free{
+    background: #3671E9;
+border-radius: 32px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 16px 16px 24px;
+gap: 24px;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+}
+.try-free span .fa{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+
+place-content: center;
+place-items: center;
+    width: 32px;
+    height: 32px;
+        color: #3671E9;
+    
 }
