@@ -28,6 +28,7 @@ font-family: 'Rubik', sans-serif;
 }
 .container{
   position: relative;
+  width: 100%;
 }
 
 main{
@@ -121,15 +122,16 @@ gap: 8px;
 
 .hero-section img.shadow1{
     position: absolute;
-left: -50px;
-top: 300px;
+left: -5%;
+top: 40%;
 }
 .hero-section img.shadow2{
     position: absolute;
-left: 490px;
+    right: -120px;
+
 bottom: 0;
 }
-.hero-section .hero-text{
+ .hero-text{
    text-align: left;
     display: flex;
     place-content: center;
@@ -180,6 +182,18 @@ letter-spacing: 0.01em;
 
 color: #E0E0E0;
 }
+.try-free a{
+text-decoration: none;
+color: #FFFFFF;
+display: flex;
+gap: 24px;
+place-items: center;
+ padding: 16px 16px 16px 24px; 
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 150%;
+ 
+}
 .hero-text .try-free{
     background: #3671E9;
 border-radius: 32px;
@@ -187,13 +201,13 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 16px 16px 16px 24px;
-gap: 24px;
-font-weight: 500;
-font-size: 18px;
-line-height: 150%;
+
+cursor: pointer;
 }
-.try-free span .fa{
+.try-free:hover{
+    transform: scale(1.03);
+}
+.try-free  .fa{
     background-color: #FFFFFF;
     border-radius: 50%;
     display: flex;
@@ -205,3 +219,108 @@ place-items: center;
         color: #3671E9;
     
 }
+
+/* Why CRAPPO */
+.crappo{
+  position: relative;
+   
+}
+.crappo .flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    /* gap: 80px; */
+}
+.crappo .flex{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    gap: 24px;
+    place-items: center;
+    /* place-content: center; */
+}
+.crappo .icon{
+ background: rgba(255, 255, 255, 0.1);
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+display: flex;
+ place-content: center;
+ place-items: center;
+}
+.crappo .icon img{
+width: 40%;
+height: 40%;
+}
+.crappo .flex-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.flex-text h5{
+    font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+color: #FFFFFF;
+}
+.flex-text p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.01em;
+
+color: #E0E0E0;
+}
+
+
+/* CRAPPO content */
+.content{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 100px;
+    position: relative;
+   transition: all 0.3s linear;
+}
+
+
+.content h3{
+    font-weight: 700;
+font-size: 33px;
+line-height: 150%;
+}
+.content-text .learn{
+    justify-content: center;
+    align-items: center;
+    background: #3671E9;
+border-radius: 32px;
+    cursor: pointer;   
+    transition:all 0.3s linear ;
+}
+.learn a{
+   
+        text-decoration: none;
+        color: #FFFFFF;
+        display: flex;
+        gap: 24px;
+        place-items: center;
+         padding: 16px 24px; 
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 150%;
+        }
+
+        .learn:hover{
+            transform: scale(1.03);
+        }
+
+        .content .d, .u{
+            position: absolute;
+            right: -10%;
+        }
+        .content .d{
+            top: -130px;
+        }
+        .content .u{
+            bottom: -30px;
+        }
