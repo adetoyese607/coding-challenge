@@ -324,3 +324,150 @@ border-radius: 32px;
         .content .u{
             bottom: -30px;
         }
+
+
+        /* Earn text */
+        .earn-text{
+            padding-top: 100px;
+            padding-bottom: 64px;
+            text-align: center;
+        }
+        .earn-text h5{
+            font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+  }
+  .earn-text p{
+ font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #E0E0E0;
+  }
+
+  /* Calculate */
+  .calculate{
+    background-color: #FFFFFF;
+    color: #0D0D2B;
+    /* padding: 48px; */
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    /* left: 0; */
+    left: 17%;
+    top: -29%;
+    border-radius: 16px;
+    position: absolute;
+box-shadow:  0px 1px 8px #391777;
+
+  }
+  .base1{
+    display: flex;
+    gap: 48px;
+    padding: 48px;
+    /* background-color: red; */
+    background: #FBFCFE;
+    border-radius: 16px 16px 0px 0px;
+  }
+ .base1 input {
+    width: 50%;
+ }
+ .base1 select, button{
+    width: 25%;
+
+ }
+ .base1 button{
+    /* padding: 0padd; */
+    border: 0;
+    padding: 16px 32px;
+    background: #3671E9;
+border-radius: 32px;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+transition:all 0.3s linear;
+ }
+  .base1 input, select{
+    border:none;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px 0px;
+    /* outline: none; */
+  }
+  [placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
+ input, select{
+    font-weight: 400;
+font-size: 20px;
+color: #0D0D2B;
+ }
+ .base1 button:hover{
+    transform: scale(1.03);
+ }
+
+
+ .base2{
+    display: flex;
+    padding: 48px;
+    background-color: firebrick;
+    flex-direction: column;
+    gap: 5px;
+    background: #FFFFFF;
+border-radius: 0px 0px 16px 16px;
+/* box-shadow: 0px 0px 40px #391777; */
+/* mix-blend-mode: overlay; */
+ }
+ .base2 h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #3671E9;
+ }
+ .base2 h2{
+    font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #0D0D2B;
+ }
+ .base2 h2 span{
+    color: #3671E9;
+ }
+ .base2 p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.01em;
+color: #828282;
+ }
+
+
+ /* white background */
+ .white{
+    background-color: #FFFFFF;
+    color: #0D0D2B;
+    padding-top: 320px;
+    padding-bottom: 100px;
+    /* height: 700px; */
+    position: relative;
+    top: 200px;
+ }
+ .white h4{
+    text-align: center;
+    font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+/* or 60px */
+
+text-align: center;
+ }
