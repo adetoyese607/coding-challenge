@@ -577,11 +577,16 @@ opacity: 0.7;
 .last-blue{
     background: #2B076E;
     padding-top: 100px ;
-    padding-bottom: 270px;
+    
 }
 .features{
     position: relative;
+    padding-bottom: 120px;
    /* text-align: center; */
+}
+.features .top{
+    position: absolute;
+    top: -20%;
 }
 .features h4{
     font-weight: 700;
@@ -591,10 +596,11 @@ text-align: center;
 margin-bottom: 100px;
 }
 
-.features .invest{
+ .invest{
     /* background-color: red; */
     display: flex;
-
+/* gap: 100px; */
+width: 100%;
     justify-content: space-between;
 place-items: center;
     /* padding: 40px; */
@@ -604,6 +610,7 @@ place-items: center;
     border-radius: 16px;
     padding: 40px;
     width: 50%;
+    margin-bottom: 150px;
 }
 .invest-chart .image{
     display: flex;
@@ -623,7 +630,7 @@ place-items: center;
     font-family: 'Inter', sans-serif;
     padding-bottom: 24px;
 }
-.bit-rise .btc{
+ .btc{
     display: flex;
     /* flex-direction: column; */
     gap: 16px;
@@ -633,7 +640,12 @@ place-items: center;
     flex-direction: column;
     gap: 4px;
 }
-.bit-rise .rise{
+.btc img{
+    width: 40px;
+    height: 40px;
+}
+
+ .rise{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -641,7 +653,7 @@ place-items: center;
     letter-spacing: 0.01em;
     color: #42FFFF;
 }
-.bit-rise p{
+.btc-sub p{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -649,7 +661,7 @@ place-items: center;
     gap: 8px;
     place-items: center;
 }
-.bit-rise p span{
+.btc-sub p span{
     font-weight: 600;
 font-size: 16px;
 line-height: 19px;
@@ -658,7 +670,7 @@ color: #CFCFCF;
 
 opacity: 0.7;
 }
-.bit-rise .num{
+.btc-sub .num{
     font-weight: 400;
 font-size: 14px;
 line-height: 17px;
@@ -668,13 +680,10 @@ letter-spacing: 0.01em;
 
 color: #F2F2F2;
 }
-.btc img{
-    width: 40px;
-    height: 40px;
-}
 
 .invest-text{
  position: relative;
+ width: 50%;
 }
 .invest-text h2{
     font-weight: 700;
@@ -761,4 +770,116 @@ text-align: center;
 letter-spacing: 0.01em;
 
 color: #F2F2F2;
+}
+
+
+.invest-chart2 {
+  
+    left: -120px;
+    position: relative;
+}
+.invest-chart2 img{
+    /* position: absolute; */
+    width: 100%;
+}
+.invest-text.two{
+    width: 50%;
+}
+/* .invest-text.two p{
+
+} */
+.table{
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    padding: 40px 35px;
+    position: relative;
+    /* background-color: red; */
+    background: #35068C;
+backdrop-filter: blur(4px);
+border-radius: 16px;
+max-width: 610px;
+z-index: 1;
+}
+.table .head{
+    display: flex;
+    flex-basis: 100%;
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+   justify-content: space-between;
+   
+    margin-bottom: 16px;
+ 
+}
+.head p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* background-color: red; */
+}
+.head .none{
+    margin-right: 70px;
+} 
+.table .dolls{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+   
+}
+.dolls.one{
+    margin-bottom: 125px;
+}
+.dolls .btc-sub p{
+    font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+}
+.dolls .btc-sub .num{
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.01em;
+
+color: #F2F2F2;
+}
+.dolls .yell{
+    width: 40px;
+    height: 40px;
+}
+.dolls .list{
+    display: flex;
+}
+
+.dolls .list {
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #F2F2F2;
+}
+
+.dolls .rise{
+    display: flex;
+   gap: 8px;
+
+}
+
+.outside{
+    background: #4610AD;
+border-radius: 16px;
+padding:16px 45px  ;
+/* margin-top: 24px; */
+position: absolute;
+top: 145px;
+right: 72px;
+width: 100%;
+margin-bottom: 24px;
+}
+.outside .rise{
+    color: #FF7676;
+}
+.feat{
+    position: absolute;
+    top: 108px;
+    right:-120px ;
+    z-index: 0;
 }
