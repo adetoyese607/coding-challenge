@@ -1113,16 +1113,34 @@ gap: 34px;
 
 /* Animation */
 .hero-image{
-    animation: hero-image 2s linear forwards;
+    animation: hero-image 3s linear forwards;
 }
 @keyframes hero-image {
     0%{
-        transform: ;
+        transform: rotate(60deg);
         opacity: 0;
     }
     100%{
-        transform: matrix3d(0);
+        transform: rotate(0deg);
         opacity: 1;
     }
     
+}
+.hero-text{
+    animation: hero-text 4s linear forwards;
+}
+@keyframes hero-text {
+    0%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        /* opacity: 1; */
+    }
+    
+}
+.content-text.hero-text,
+.content-image.hero-image{
+    animation-delay: 2s;
 }
